@@ -2,7 +2,7 @@ package hw1;
 
 public class Task3 {
     public static void main(String[] args) {
-       /* float a = 45.6;
+       /* float a = 45.6; - float a = 45.6f;
         long b = 60000;
         long c = a / b;
         */
@@ -32,7 +32,7 @@ public class Task3 {
 
         /*
         byte code = 1;
-        boolean isActive = (boolean) code;
+        boolean isActive = (boolean) code;    (boolean) code
         */
 
 
