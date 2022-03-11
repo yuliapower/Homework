@@ -10,9 +10,37 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        //int randomNumber = 2 + (int) (Math.random() * 98);
-        // System.out.println(randomNumber);
-        while (true) {
+        int start = 2;
+        int end = 100;
+        while (start <= end) {
+            int value = (end+start)/2;
+            System.out.println("Число равно " + value + " ?");
+            int userNum = in.nextInt();
+            if (userNum == 1) break;
+            if (userNum == 0) {
+                System.out.println("Число больше " + value + " ?");
+                int userNum2 = in.nextInt();
+                if (userNum2 == 1) {
+                    start = value;
+                    continue;
+                }
+                if (userNum2 == 0) {
+                    System.out.println("Число меньше " + value + " ?");
+                    int userNum3 = in.nextInt();
+                    if (userNum3 == 0) break;
+                    if (userNum3 == 1) {
+                        end = value;
+                        continue;
+                    }
+                }
+            }
+        }
+    }
+}
+// int interval = 50;
+//int randomNumber = 2 + (int) (Math.random() * 98);
+// System.out.println(randomNumber);
+       /* while (true) {
             int randomNumber = 2 + (int) (Math.random() * 98);
             System.out.println("Число равно " + randomNumber + " ?");
             int userNum = in.nextInt();
@@ -37,5 +65,4 @@ public class Task4 {
                 }
             }
         }
-    }
-}
+        */
