@@ -18,5 +18,9 @@ public class Task2 {
                 System.out.println(firstOperand/secondOperand);
                 break;
         }
+        //double res;   - прописываем в кейсах его значение
+        // default:
+        // sout (res)   -выносим вывод в консоль за свитч
+
     }
 }
