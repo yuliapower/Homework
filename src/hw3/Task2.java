@@ -7,14 +7,14 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число");
-int number = scanner.nextInt();
-int sum = 0;
+        int number = scanner.nextInt();
+        int sum = 0;
 
-        while (number!=0){
-            sum +=(number%10);
-            number/=10;
+        while (number != 0) {
+            sum += (number % 10);
+            number /= 10;
         }
-        System.out.println("Сумма = "+ (sum));
+        System.out.println("Сумма = " + (sum));
 
     }
 }

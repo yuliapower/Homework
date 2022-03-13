@@ -12,7 +12,7 @@ import java.util.Scanner;
 //Если введен 0, выввести "выход из программы" (программа завершает работу)
 public class Task3 {
     public static void main(String[] args) {
-        int randomNumber = 1 + (int) (Math.random() * 8);
+        int randomNumber = 1 + (int) (Math.random() * 9);
         Scanner in = new Scanner(System.in);
         System.out.println("Введите целое число");
         int userNum = in.nextInt();
