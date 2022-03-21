@@ -1,4 +1,4 @@
-package ru.itmo.homework.climbers;
+package ru.itmo.homework6.climbers;
 
 //Альпинист создаётся с именем (не менее 3 символов)
 // и адресом проживания (не менее 5 символов).

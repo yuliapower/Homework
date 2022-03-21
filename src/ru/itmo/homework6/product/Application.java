@@ -1,4 +1,4 @@
-package ru.itmo.homework.product;
+package ru.itmo.homework6.product;
 
 public class Application {
     public static void main(String[] args) {

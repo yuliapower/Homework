@@ -1,4 +1,4 @@
-package ru.itmo.homework.product;
+package ru.itmo.homework6.product;
 
 //Класс Продукт:
 //Свойства: название продукта / белки / жиры / углеводы / калории

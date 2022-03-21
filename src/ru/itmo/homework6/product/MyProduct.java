@@ -1,4 +1,4 @@
-package ru.itmo.homework.product;
+package ru.itmo.homework6.product;
 
 import java.util.Arrays;
 

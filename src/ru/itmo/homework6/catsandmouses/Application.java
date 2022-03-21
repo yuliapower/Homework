@@ -1,4 +1,4 @@
-package ru.itmo.homework.catsandmouses;
+package ru.itmo.homework6.catsandmouses;
 
 public class Application {
 }

@@ -1,4 +1,4 @@
-package ru.itmo.homework.climbers;
+package ru.itmo.homework6.climbers;
 
 import java.util.Arrays;
 

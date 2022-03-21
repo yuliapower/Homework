@@ -1,4 +1,4 @@
-package ru.itmo.homework.climbers;
+package ru.itmo.homework6.climbers;
 
 public class Application {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ru.itmo.homework.climbers;
+package ru.itmo.homework6.climbers;
 
 //Гора создаётся с названием (не менее 4 символов),
 // страной (не менее 4 символов) и высотой (не менее 100 метров)
