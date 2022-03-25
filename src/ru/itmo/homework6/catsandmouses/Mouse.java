@@ -1,13 +1,28 @@
 package ru.itmo.homework6.catsandmouses;
 
 public class Mouse {
-    private int vMouse;
+    private int speedMouse;
 
-    public int getvMouse() {
-        return vMouse;
+    public Mouse(int vMouse) {
+        setSpeedMouse(vMouse);
+
     }
 
-    public void setvMouse(int vMouse) {
-        this.vMouse = vMouse;
+    public int getSpeedMouse() {
+        return speedMouse;
+    }
+
+    public void setSpeedMouse(int vMouse) {
+        if (vMouse<0){
+            throw new IllegalArgumentException("Скорость мыши не может быть отрицательной");
+        }
+        this.speedMouse = vMouse;
+    }
+
+    @Override
+    public String toString() {
+        return "Mouse{" +
+                "speedMouse=" + speedMouse +
+                '}';
     }
 }
