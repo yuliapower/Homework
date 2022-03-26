@@ -8,16 +8,16 @@ public class Application {
         Mountain elbrus = new Mountain("Elbrus","Russia",5000);
         Mountain ararat = new Mountain("Ararat","Russia",8000);
 
-        Climber climber1 = new Climber("Maxim","SPB");
-        Climber climber2 = new Climber("Dima","SPB");
-        Climber climber3 = new Climber("Anna","SPB");
-        Climber climber4 = new Climber("Oleg","SPB");
-        Climber climber5 = new Climber("Ula","SPB");
-        Climber climber6 = new Climber("Arina","SPB");
+        Climber climber1 = new Climber("Maxim","Saint-Petersburg");
+        Climber climber2 = new Climber("Dima","Saint-Petersburg");
+        Climber climber3 = new Climber("Anna","Saint-Petersburg");
+        Climber climber4 = new Climber("Oleg","Saint-Petersburg");
+        Climber climber5 = new Climber("Ula","Saint-Petersburg");
+        Climber climber6 = new Climber("Arina","Saint-Petersburg");
 
-        Group group1 = new Group(everest,10);
-        Group group2 = new Group(elbrus,10);
-        Group group3 = new Group(ararat,10);
+        Group group1 = new Group(false,everest,3);
+        Group group2 = new Group(true,elbrus,3);
+        Group group3 = new Group(true,ararat,3);
 
 
 

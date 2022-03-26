@@ -13,7 +13,8 @@ public class Group {
     private boolean opened;
 
 
-    public Group(Mountain mountain,int countClimbers) {
+    public Group(boolean opened, Mountain mountain,int countClimbers) {
+        this.opened = opened;
         this.climbers = new Climber[countClimbers];
         this.mountain = mountain;
     }

@@ -8,9 +8,9 @@ public class Mountain {
     private int height;
 
     public Mountain(String mountainName, String country, int height) {
-        this.mountainName = mountainName;
-        this.country = country;
-        this.height = height;
+        setMountainName(mountainName);
+        setCountry(country);
+        setHeight(height);
     }
 
     public void setMountainName(String mountainName) {

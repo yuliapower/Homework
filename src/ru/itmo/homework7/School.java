@@ -3,14 +3,14 @@ package ru.itmo.homework7;
 import java.util.Arrays;
 
 public class School {
-    private final String schoolName;
+    private String schoolName;
     private Director director;
     private Teacher teachers[];
     private Pupil pupils[];
 
 
     public School(String schoolName, Director director, Teacher[] teachers, Pupil[] pupils) {
-        this.schoolName = schoolName;
+        setSchoolName(schoolName);
         this.director = director;
         this.teachers = teachers;
         this.pupils = pupils;
@@ -24,7 +24,18 @@ public class School {
         this.director = director;
     }
 
-//    public void addTeachers(Teacher teacher) {
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+    public void setSchoolName(String schoolName) {
+        if (schoolName==null){
+            throw new IllegalArgumentException("Введите название школы");
+        }
+        this.schoolName = schoolName;
+    }
+
+    //    public void addTeachers(Teacher teacher) {
 //        for (int i = 0; i < teachers.length; i++) {
 //            if (teachers[i] == null) {
 //                teachers[i] = teacher;
@@ -48,10 +59,12 @@ public class School {
     public void dayAtSchool() {
         director.startLessons();
         for (int i = 0; i < teachers.length; i++) {
-            for (int j = 0; j < pupils.length; j++) {
-                if (teachers[i].getTeacherSubject().equals(pupils[j].getPupilSubject())) {
-                    teachers[i].teach(pupils[j]);
-                    System.out.println(pupils[j]);
+            if (teachers[i] != null) {
+                for (int j = 0; j < pupils.length; j++) {
+                    if (pupils[j]!=null&&teachers[i].getTeacherSubject().equals(pupils[j].getPupilSubject())) {
+                        teachers[i].teach(pupils[j]);
+                        System.out.println(pupils[j]);
+                    }
                 }
             }
         }

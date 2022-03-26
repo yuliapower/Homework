@@ -3,7 +3,7 @@ package ru.itmo.homework6.catsandmouses;
 public class Application {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Vasya", 23, 10,100);
-        Cat cat2 = new Cat("Vasya2", 20, 7,100);
+        Cat cat2 = new Cat("Vasya2", 20, 12,100);
         Mouse mouse1 = new Mouse(20);
         cat1.catchMouses(mouse1);
         Mouse mouse2 = new Mouse(19);

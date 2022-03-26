@@ -7,8 +7,8 @@ public class Climber {
     private String address;
 
     public Climber(String name, String address) {
-        this.name = name;
-        this.address = address;
+        setName(name);
+        setAddress(address);
     }
 
     public void setName(String name) {

@@ -18,7 +18,7 @@ public class Cat {
         setName(name);
         setSpeedCat(vCat);
         setWeight(weight);
-        if (mouses > 100 ){
+        if (mouses > 100) {
             System.out.println("Кот не может хранить больше 100 мышей");
             return;
         }
@@ -85,11 +85,10 @@ public class Cat {
                 if (cat.getMouses()[i] != null) {
                     catchMouses(cat.getMouses()[i]);
                     cat.getMouses()[i] = null;
-                } else {
-                    System.out.println("Кот не может поймать другого кота");
-                    return;
                 }
             }
+        } else {
+            System.out.println("Кот не может поймать другого кота");
         }
     }
 
